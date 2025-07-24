@@ -54,7 +54,7 @@ st.markdown("""
 @st.cache_resource
 def load_model():
     """Load the IndoBART model and tokenizer with caching."""
-    model_path = "results_gaduhhartawan_indobart-base"
+    model_path = "GarentEcklesia/IndoBart_Summarization"
     
     try:
         if not os.path.exists(model_path):
