@@ -1,7 +1,6 @@
 import streamlit as st
 import torch
 from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
-import os
 import time
 from datetime import datetime
 import re
@@ -56,12 +55,7 @@ def load_model():
     """Load the IndoBART model and tokenizer with caching."""
     model_path = "GarentEcklesia/IndoBart_Summarization"
     
-    try:
-        if not os.path.exists(model_path):
-            st.error(f"Direktori model '{model_path}' tidak ditemukan!")
-            st.info("Pastikan folder model Anda berada di direktori yang sama dengan script ini.")
-            return None, None
-        
+    try:    
         with st.spinner("Memuat model IndoBART... Harap tunggu sebentar."):
             tokenizer = AutoTokenizer.from_pretrained(model_path)
             model = AutoModelForSeq2SeqLM.from_pretrained(model_path)
