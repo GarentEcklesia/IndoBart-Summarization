@@ -14,3 +14,7 @@ Fitur-fitur pada Aplikasi ini:
 4. Tips untuk hasil terbaik (misalnya teks lebih dari 200 kata).
 
 Aplikasi ini sudah dideploy menggunakan Streamlit Cloud dan dapat diakses di sini: https://indobart-summarization-garentecklesia.streamlit.app/
+
+Preview Aplikasi:
+<img width="1919" height="753" alt="image" src="https://github.com/user-attachments/assets/b2e1521e-9dbb-4f95-b1ff-c717d5f2ec6a" />
+<img width="1917" height="905" alt="image" src="https://github.com/user-attachments/assets/7655dfea-f5b5-482e-9cd4-d887582e59d4" />
