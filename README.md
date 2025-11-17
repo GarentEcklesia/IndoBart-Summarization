@@ -1,20 +1,63 @@
-# IndoBart-Summarization
-Proyek ini adalah aplikasi Text Summarization yang menggunakan IndoBART — sebuah model transformer untuk Bahasa Indonesia.
-Model yang digunakan adalah gaduhhartawan/indobart-base (HuggingFace Pretrained Model), kemudian dilakukan fine-tuning menggunakan dataset artikel BBC Indonesia yang tersedia di Kaggle.
+# ✍️ IndoBart - Text Summarization
 
-Tujuan proyek ini adalah untuk:
-1. Membuat sistem ringkasan otomatis teks berbahasa Indonesia.
-2. Memudahkan pengguna dalam membaca inti artikel panjang.
-3. Menunjukkan penerapan transformer-based NLP model dalam bahasa lokal.
+This is a Text Summarization application that uses **IndoBART**, a transformer model specifically for the Indonesian language. The project utilizes the `gaduhhartawan/indobart-base` (a Hugging Face Pretrained Model) which was fine-tuned on the BBC Indonesia article dataset available on Kaggle.
 
-Fitur-fitur pada Aplikasi ini:
-1. Input teks artikel bahasa Indonesia melalui form interaktif.(Type/Paste teks & Gunakan teks contoh)
-2. Kontrol parameter summarization (Panjang maksimal ringkasan (tokens), panjang minimal ringkasan (tokens), dan ukuran beam search)
-3. Menampilkan hasil ringkasan secara instan.
-4. Tips untuk hasil terbaik (misalnya teks lebih dari 200 kata).
+The objectives of this project are:
+* To create an automatic summarization system for Indonesian text.
+* To help users quickly grasp the core ideas of long articles.
+* To demonstrate the application of transformer-based NLP models for a local language.
 
-Aplikasi ini sudah dideploy menggunakan Streamlit Cloud dan dapat diakses di sini: https://indobart-summarization-garentecklesia.streamlit.app/
+## 🚀 Live Demo
 
-Preview Aplikasi:
-<img width="1919" height="753" alt="image" src="https://github.com/user-attachments/assets/b2e1521e-9dbb-4f95-b1ff-c717d5f2ec6a" />
-<img width="1917" height="905" alt="image" src="https://github.com/user-attachments/assets/7655dfea-f5b5-482e-9cd4-d887582e59d4" />
+This application has been deployed using Streamlit Cloud and can be accessed here:
+
+[**➡️ Click here to launch the Streamlit App**](https://indobart-summarization-garentecklesia.streamlit.app/)
+
+## 💡 Application Features
+
+* **Text Input:** An interactive form to type or paste any Indonesian article. (Also includes a button to use sample text).
+* **Parameter Control:** Adjust summarization parameters like:
+    * Max Length (tokens)
+    * Min Length (tokens)
+    * Beam Search Size
+* **Instant Results:** Displays the generated summary immediately.
+* **User Tips:** Provides tips for achieving the best results (e.g., using text longer than 200 words).
+
+## ⚙️ Tech Stack
+
+* **NLP Model:** Hugging Face `transformers` (IndoBART)
+* **Core Library:** PyTorch
+* **Web Framework:** Streamlit
+* **Data Handling:** Pandas, NumPy
+* **Deployment Platform:** Streamlit Cloud
+
+## 🧠 Model Details
+
+* **Base Model:** **IndoBART** (`gaduhhartawan/indobart-base` from Hugging Face).
+* **Task:** Abstractive Text Summarization.
+* **Fine-tuning Dataset:** BBC Indonesia articles dataset from Kaggle.
+
+## 🛠️ How to Run Locally
+
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/GarentEcklesia/Credit-Card-Fraud-Detection
+    cd Credit-Card-Fraud-Detection
+    ```
+
+2.  **Install dependencies:**
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+3.  **Run the Streamlit app:**
+    ```bash
+    streamlit run app.py
+    ```
+
+## 📬 Contact
+
+Garent Ecklesia - [garentecklesia45678@gmail.com](mailto:garentecklesia45678@gmail.com)
+
+## 📝 License
+This project is open-source and free to use for educational and research purposes.
